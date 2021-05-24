@@ -17,38 +17,49 @@ namespace writereadmul
         private static async void AnotheFun()
         { string filePath = @"C:\Users\shahzaib.hassan\Desktop\File\One.txt";
 
-            Task<string> task = MethodA("THREAD 1");
+            //  string task = MethodA("THREAD 1");
+            Task<string> task = MethodA("THREAD 2");
+            //    Task<>
             //task.Start();
-           
+
             ////    Task<int> task = ReadFile(filePath);
             ///
-           
+
 
 
             Console.WriteLine(" Thread one is started");
-           
-            string length = await task;
-            Console.WriteLine($"Thread is write text==={length.Length}");
-        Task<int> tas = ReadFile(filePath);
+            Task<string> le = task;
+            //  string length =  task;
+            //   Console.WriteLine($"Thread is write text==={length.Length}");
+            Console.WriteLine($"Thread is write text==={le.IsCompletedSuccessfully} and ==={le.Result} and=={le.Status}");
+            Task<int> tas = ReadFile(filePath);
             /// Reading size of file;
 
 
-        //    tas.Start();
-           
-            for (int i = 0; i < 10; i++)
+            //    tas.Start();
+            int len = await tas;
+            if (len != 0)
             {
-                Console.WriteLine( i);
-                int len = await tas;
 
-            Console.WriteLine(" Total length: " + len);
 
+                Console.WriteLine(" Total length: " + len);
             }
-            Console.WriteLine(" done");
+            else
+            {
+                for (int i = 0; i < 10; i++)
+                {
+                    Console.WriteLine(i);
+                   
+
+                }
+            } Console.WriteLine(" done");
+        }
+            
        
 
 
           
-        }
+        
 
         static async Task<int> ReadFile(string file)
         {
@@ -84,11 +95,12 @@ namespace writereadmul
             {
                 using (StreamWriter outStream = File.AppendText(@"C:\Users\shahzaib.hassan\Desktop\File\One.txt"))
                 {
-                    outStream.WriteLine("This was written by thread: " + str);
-                    
-                       
-                    
-                    Thread.Sleep(3000);
+                   outStream.WriteLineAsync("This was written by thread: " + str);
+
+
+
+                    //Thread.Sleep(3000);
+                    Task.Delay(5000);
                      
 
                 }
