@@ -18,6 +18,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "taskjoin", "taskjoin\taskjo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tpl", "tpl\tpl.csproj", "{99335296-6051-4BD9-9E05-F26F915C1273}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcedureGet", "ProcedureGet\ProcedureGet.csproj", "{6612CA52-91DB-47EA-9DF2-E1B2DD92AA91}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -100,6 +102,18 @@ Global
 		{99335296-6051-4BD9-9E05-F26F915C1273}.Release|x64.Build.0 = Release|Any CPU
 		{99335296-6051-4BD9-9E05-F26F915C1273}.Release|x86.ActiveCfg = Release|Any CPU
 		{99335296-6051-4BD9-9E05-F26F915C1273}.Release|x86.Build.0 = Release|Any CPU
+		{6612CA52-91DB-47EA-9DF2-E1B2DD92AA91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6612CA52-91DB-47EA-9DF2-E1B2DD92AA91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6612CA52-91DB-47EA-9DF2-E1B2DD92AA91}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6612CA52-91DB-47EA-9DF2-E1B2DD92AA91}.Debug|x64.Build.0 = Debug|Any CPU
+		{6612CA52-91DB-47EA-9DF2-E1B2DD92AA91}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6612CA52-91DB-47EA-9DF2-E1B2DD92AA91}.Debug|x86.Build.0 = Debug|Any CPU
+		{6612CA52-91DB-47EA-9DF2-E1B2DD92AA91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6612CA52-91DB-47EA-9DF2-E1B2DD92AA91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6612CA52-91DB-47EA-9DF2-E1B2DD92AA91}.Release|x64.ActiveCfg = Release|Any CPU
+		{6612CA52-91DB-47EA-9DF2-E1B2DD92AA91}.Release|x64.Build.0 = Release|Any CPU
+		{6612CA52-91DB-47EA-9DF2-E1B2DD92AA91}.Release|x86.ActiveCfg = Release|Any CPU
+		{6612CA52-91DB-47EA-9DF2-E1B2DD92AA91}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
