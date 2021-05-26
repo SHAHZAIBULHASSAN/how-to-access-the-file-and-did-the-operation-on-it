@@ -95,8 +95,13 @@ namespace ProcedureGet
                 sqlCmd.Parameters.AddWithValue("@Name", txtn.Text.Trim());
                 sqlCmd.Parameters.AddWithValue("@Salary", txts.Text.Trim());
                 sqlCmd.Parameters.AddWithValue("@Position", txtp.Text.Trim());
-                sqlCmd.ExecuteNonQuery();
-                MessageBox.Show("Saved successfully");
+              int result=  sqlCmd.ExecuteNonQuery();
+                if (result>0)
+                {
+           MessageBox.Show("Saved successfully ID" + result);
+                }
+               
+                
             }
 
            }
